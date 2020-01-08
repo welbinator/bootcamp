@@ -20,6 +20,12 @@ h3 {
     font-size: 4rem;
     font-weight: 400;
 }
+h4 {
+font-size: 3rem;
+}
+p, li {
+    font-size: 1rem;
+}
 
 header {
    
@@ -44,7 +50,7 @@ list-style: none;
 }
 
 header nav ul li {
-    margin: 5px;
+    margin: 15px;
 }
 .navlink {
     text-decoration: none;
@@ -65,7 +71,7 @@ section {
 }
 
 section#enroll {
-    height: 70vh;
+    height: 100vh;
     /* border: 1px solid blue; */
   margin-top: -10vh;
   position: relative;
@@ -93,6 +99,22 @@ section#syllabus {
     color: black;
 }
 
+section#syllabus h3 {
+    font-size: 3rem;
+}
+
+section#syllabus p.tagline {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section#syllabus .syllabus {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
 .btn-primary {
     background-color: #E3170A;
     border-radius: 32px;
@@ -100,7 +122,6 @@ section#syllabus {
     font-size: 30px;
     color: white;
     text-decoration: none;
-   
 }
 
 .accordion, .accordion1 {
@@ -136,3 +157,28 @@ section#syllabus {
   .panel p {
       padding: 18px;
   }
+
+  section#privacy h5 {
+      text-align: left;
+      font-weight: bold;
+      font-size: 2rem;
+  }
+
+  footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+  }
+
+  footer ul {
+      
+      list-style: none;
+      
+  }
+  footer ul li a {
+      color: white;
+      text-decoration: none;
+  }
+  
+ 
