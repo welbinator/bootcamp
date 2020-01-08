@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 body {
     background-color: black;
     color: white;
@@ -19,20 +19,23 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     font-size: 4rem;
     font-weight: 400;
-}
-h4 {
+    color: white;
+} 
+ h4 {
 font-size: 3rem;
-}
+} 
 h5 {
     font-size: 2rem;
-}
+} 
 p, li {
     font-size: 1rem;
 }
 
 header {
    
-    top: -10vh;
+    /* top: -10vh; */
+    position: relative;
+    z-index: 3;
     height: 10vh;
     color: white;
     display: flex;
@@ -41,8 +44,8 @@ header {
     transition: top 0.5s ease;
 
 
-    /* border: 1px solid red; */
-}
+  
+} 
 
 header nav ul {
 display: flex;
@@ -71,19 +74,17 @@ header.active {
 section {
     padding: 50px;
     z-index: -1;
+    margin-top: -10vh;
 }
 
-section#enroll {
+ section#enroll {
     height: 100vh;
-    /* border: 1px solid blue; */
-  margin-top: -10vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   background: black;
+  /* margin-top: -10vh; */
+  /* position: relative; */
+
      
-}
+} 
 
 section#enroll img {
     position: absolute;
@@ -95,15 +96,11 @@ section#enroll img {
     z-index: -1;
     opacity: .6;
 }
-section#syllabus {
-    min-height: 100vh;
-    background: white;
-    border: 1px solid green;
-    color: black;
-}
+
 
 section#syllabus h3 {
     font-size: 3rem;
+    color: black;
 }
 
 section#syllabus p.tagline {
@@ -117,7 +114,16 @@ section#syllabus .syllabus {
     margin: auto;
     margin-top: 50px;
 }
-
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pp-tableCell div {
+    text-align: center;
+}
 .btn-primary {
     background-color: #E3170A;
     border-radius: 32px;
@@ -127,7 +133,7 @@ section#syllabus .syllabus {
     text-decoration: none;
 }
 
-.accordion, .accordion1 {
+.accordion p, .accordion1 p{
     background-color: #2D1E2F;
     color: white;
     cursor: pointer;
@@ -157,11 +163,13 @@ section#syllabus .syllabus {
     background-color: white;
     display: none;
     overflow: hidden;
-    font-size: 1rem;
+   
   }
 
   .panel p {
       padding: 18px;
+      font-size: 1rem;
+      text-align: left;
   }
 
   section#privacy h5 {
@@ -175,6 +183,9 @@ section#syllabus .syllabus {
       justify-content: space-around;
       align-items: center;
       height: 10vh;
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
   }
 
   footer ul {
