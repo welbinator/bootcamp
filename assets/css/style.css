@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+} 
 body {
     background-color: black;
     color: white;
     font-family: 'Prompt', sans-serif;
     font-size: 62.5%;
+    /* display: none; */
     
 }
 h1, h2, h3, h4, h5, h6 {
@@ -186,6 +187,7 @@ section#syllabus .syllabus {
       position: absolute;
       bottom: 0;
       width: 100vw;
+      z-index: 1;
   }
 
   footer ul {
