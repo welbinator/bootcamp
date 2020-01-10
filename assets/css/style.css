@@ -6,7 +6,7 @@
     box-sizing: border-box;
 } 
 body {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-family: 'Prompt', sans-serif;
     font-size: 62.5%;
@@ -23,11 +23,10 @@ h3 {
     color: white;
 } 
  h4 {
-font-size: 3rem;
+font-size: 1.5rem;
+font-weight: 500;
 } 
-h5 {
-    font-size: 2rem;
-} 
+
 p, li {
     font-size: 1rem;
 }
@@ -75,7 +74,7 @@ header.active {
 section {
     padding: 50px;
     z-index: -1;
-    margin-top: -10vh;
+    /* margin-top: -10vh; */
 }
 
  section#enroll {
@@ -98,15 +97,18 @@ section#enroll img {
     opacity: .6;
 }
 
-
+section#syllabus {
+    padding-bottom: 300px;
+}
 section#syllabus h3 {
     font-size: 3rem;
     color: black;
 }
 
-section#syllabus p.tagline {
+section#syllabus h4.tagline {
     text-align: center;
-    font-size: 1.5rem;
+    
+    color: black;
 }
 
 section#syllabus .syllabus {
@@ -171,6 +173,7 @@ section#syllabus .syllabus {
       padding: 18px;
       font-size: 1rem;
       text-align: left;
+      color: black;
   }
 
   section#privacy h5 {
@@ -187,6 +190,7 @@ section#syllabus .syllabus {
       position: absolute;
       bottom: 0;
       width: 100vw;
+      background: white;
       z-index: 1;
   }
 
@@ -194,9 +198,13 @@ section#syllabus .syllabus {
       
       list-style: none;
       
+      
+  }
+  footer p {
+    color: rgb(0, 0, 0);
   }
   footer ul li a {
-      color: white;
+      color: rgb(0, 0, 0);
       text-decoration: none;
   }
   
