@@ -2,18 +2,21 @@
 
 const syllabus = document.querySelector('#syllabus');
 const header = document.querySelector('header');
+const footer = document.querySelector('footer');
 const options = {
     root: null,
-    threshold: 0.6
+    threshold: 0.5
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
 entries.forEach(entry => {
     if (entry.isIntersecting) {
         header.classList.add('active');
+        footer.classList.add('show');
        
     } else {
         header.classList.remove('active');
+        footer.classList.remove('show');
         
     }
     console.log(entry.isIntersecting);

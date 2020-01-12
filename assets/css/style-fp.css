@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    /* background-color: black; */
+    color: white;
+    font-family: 'Prompt', sans-serif;
+    font-size: 62.5%;
+    /* display: none; */
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+} 
+ h3 {
+font-size: 1.5rem;
+font-weight: 500;
+} 
+
+p, li {
+    font-size: 1rem;
+}
+
+header {
+   
+    /* transform: translateY(-10vh); */
+    position: relative;
+    z-index: 3;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+} 
+
+header nav ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+
+}
+
+header nav ul li {
+    margin: 15px;
+}
+.navlink {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+header.active {
+    /* transform:translateY(0); */
+    background: #000000a6;
+    position: sticky;
+    
+}
+.btn-cta {
+    background: red;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px 30px;
+}
+#fullpage {
+    position: absolute!important;
+    top: 0;
+    
+}
+.section {
+    height: 100vh;
+    
+    /* margin-top: -10vh; */
+    
+    /* padding-top: 10vh; */
+}
+.section#enroll {
+    background: black;
+}
+.section#syllabus h2, .section#syllabus h3 {
+    color: black;
+}
+.section-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px dashed blue; */
+}
+img.hero {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    
+}
+.syllabus {
+    width: 90%;
+    max-width: 700px;
+}
+
+.accordion p, .accordion1 p{
+    background-color: #2D1E2F;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .accordion1 {
+      cursor: default;
+  }
+
+  .accordion .fa {
+    
+    font-size: 2rem;
+    float: right;
+    margin-left: 10px;
+    transform: translateY(20%);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+   
+  }
+
+  .panel p {
+      padding: 18px;
+      font-size: 1rem;
+      text-align: left;
+      color: black;
+  }
+
+  footer {
+      display: none;
+      bottom: 0;
+      position: absolute;
+      width: 100vw;
+      justify-content: space-around;
+      color: black;
+      
+  }
+  footer ul {
+      list-style: none;
+  }
+  footer a {
+      color: black;
+      text-decoration: none;
+  }
+  footer.show {
+      display: flex;
+      
+  }
