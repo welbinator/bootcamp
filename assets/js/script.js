@@ -1,11 +1,11 @@
 // sticky header animation 
 
 const syllabus = document.querySelector('#syllabus');
-const header = document.querySelector('header');
+const header = document.querySelector('.header-background');
 const footer = document.querySelector('footer');
 const options = {
     root: null,
-    threshold: 0.5
+    threshold: 0.3
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
