@@ -14,12 +14,12 @@
     <div class="header-background"></div>
     <header id="header">
         <img src="./assets/freelancebootcamp-white.svg" width="200" height="auto" alt="">
-        <nav>
-            <ul id="myMenu">
+        <!-- <nav>
+            <ul id="menu">
                 <li><a class="navlink" href="https://enroll.freelancer-bootcamp.com">Enroll</a></li>
-                <li><a class="navlink" href="#Syllabus">Syllabus</a></li>
+                <li><a class="navlink" href="#syllabus">Syllabus</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     
     <div id="fullpage">
@@ -30,42 +30,64 @@
                <h2>Become a successful Freelancer</h2>
                <h3>Take your freelance business to the next level</h3>
                <a href="https://enroll.cedarrapidscoworking.space" class="btn-cta">Enroll Now</a>
+              
            </div>
        </div><!-- section enroll -->
 
        <div class="section" id="syllabus">
            <div class="section-inner">
-               <h2>Syllabus</h2>
-               <h3>What you will learn</h3>
+               <h2>What You'll Learn</h2>
+               <!-- <h3>What you will learn</h3> -->
                <div class="syllabus">
             
-                    <div class="accordion1"><p>What to Charge</p></div>
-                    <div class="accordion"><p>How to deal with clients <i class="fa fa-angle-down"></i></p></div>
-                    <div class="panel"><p>Setting expectations</p><p>Boundaries</p><p>Always sign a contract</p></div>
-                    <div class="accordion"><p>Business Entity <i class="fa fa-angle-down"></i></p></div>
-                    <div class="panel"><p>LLC/EIN</p></div>
-                    <div class="accordion"><p>Taxes <i class="fa fa-angle-down"></i></p></div>
-                    <div class="panel"><p>File quarterly</p></div>
-                    <div class="accordion">
-                        <p>Financials <i class="fa fa-angle-down"></i></p>
-                    </div>
-                    <div class="panel">
-                        <p>Planning for retirement</p><p>Business Bank Account</p> <p>Invoicing/Expense tracking</p>
-                    </div>
-                            <div class="accordion"><p>Leads <i class="fa fa-angle-down"></i></p>
-                        
-                    </div>
-                    <div class="panel">
-                        <p>Sales</p>
-                        <p>Marketing</p>
-                        <p>Networking</p>
-                    </div>
-                    <div class="accordion1">
-                        <p>Client/project management</p>
-                    </div>
-                    <div class="accordion1">
-                        <p>CRM</p>
-                    </div>
+                    
+                <div class="day"><h3>Day 1 - Administrative</h3></div>
+                <div class="accordion"><p>Business Entity<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>LLC</p>
+                    <p>EIN</p>
+                </div>
+                <div class="accordion"><p>Invoicing/Expense Tracking<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>Zoho</p>
+                    <p>Freshbooks</p>
+                    <p>Quickbooks</p>
+                </div>
+                <div class="accordion"><p>Lead Generation<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>Sales</p>
+                    <p>Marketing</p>
+                    <p>Networking</p>
+                </div>
+               
+                <div class="day"><h3>Day 2 - Clients</h3></div>
+                <div class="accordion"><p>Client/Freelancer Relationship<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>What to Charge</p>
+                    <p>Setting Expectations</p>
+                    <p>Boundaries</p>
+                    <p>Contracts</p>
+                </div>
+                <div class="accordion"><p>Client/Project Management<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>Teamwork</p>
+                    <p>Hubspot</p>
+                </div>
+                <div class="day"><h3>Day 3 - Financials</h3></div>
+                <div class="accordion"><p>Financial Planning<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>Planning for Retirement</p>
+                    <p>Business Banking</p>
+                </div>
+                <div class="accordion"><p>Taxes<i class="fa fa-angle-down"></i></p></div>
+                <div class="panel">
+                    <p>When to File</p>
+                </div>
+
+               
+                
+                
+               
                     
             
                 </div>
@@ -91,10 +113,21 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+        <script src="assets/fullpage/vendors/scrolloverflow.min.js"></script>
 
         <script>
            new fullpage('#fullpage', {
-	//options here
+           scrollOverflow: true,
+           menu: '#menu',
+        //    anchors: ['enroll', 'syllabus'],
+            
+            // css3: true,
+            scrollingSpeed: 1000,
+            navigation: true,
+            slidesNavigation: true,
+            responsiveHeight: 330,
+            
+            controlArrows: false
 	
 });
             </script>

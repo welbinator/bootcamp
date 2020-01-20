@@ -48,3 +48,25 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach((accordion) => {
+
+
+  accordion.addEventListener('click', () => {
+   
+    hideIcon();
+    
+   
+  });
+
+function hideIcon () {
+
+  console.log("hello");
+
+}
+
+});
