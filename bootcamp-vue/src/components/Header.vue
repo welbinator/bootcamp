@@ -2,7 +2,7 @@
     <header>
         <div class="header_logo">
             <img src="../assets/images/planet.png" alt="Planet">
-            <h1 href="/">PIZZA PLANET!!</h1>
+            <h1 href="/">PIZZA PLANET?</h1>
         </div>
         <nav>
             <ul>
